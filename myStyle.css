@@ -1,18 +1,124 @@
 /*background: #8B4513;
 */
 
+/* 
+Selector --> "body"
+*/
 body{
-	color:#8B4513;
+	/* Declaration block */
+	color:#8B4513; /* Property --> "color"
+					  Value --> "#8B4513"
+				    */
+
+	background-color:mistyrose;
+
+	border:solid;
+	border-color:red;
+	border-width: 1px;
+
+/*	font-size: large;
+	font-size: medium;
+	font-size: small;*/
+	font-size: 1.25em;
+	font-family: system-ui, serif, sans-serif;
 }
 
+/*
+Selector --> "h1"
+*/
 h1{
-	color:green;
+	/* Declaration block */
+	color:maroon; /* Property --> "color" */
+	/* Value --> "maroon" */
+
+	background-color: pink;
+
+	border: dashed;
+	border-color: maroon;
+	border-right: solid;
+	border-left: solid;
+	border-right-width: 50px;
+	border-left-width: 50px;
+	padding: 20px;
+
+	text-align: center;
+
+	font-style: bolder;
+	font-size: 2.0em;
+	font-family: sans-serif;
 }
 
+/*
+Selector --> "h2"
+*/
 h2{
-	color:seagreen;
+	/* Declaration block */
+	color:maroon; /* Property --> "color"
+	Value --> "maroon" */
+
+	background-color: lightpink;
+	/*width:fit-content;*/
+
+	border: dotted;
+	border-top-width: 8px;
+	border-bottom-width: 8px;
+	border-left-width: 5px;
+	border-right-width: 5px;
+	padding: 10px;
+
+	text-align: center;
+
+	font-weight: bolder;
+	font-style: italic;
+	font-size: 1.5em;
+	font-family: sans-serif;
 }
 
-a{
-	color:rebeccapurple;
+/*
+Selector --> "a"
+*/
+a:link{
+	/* Declaration block */
+	color:tomato; /* Property --> "color"
+	Value --> "tomato" */
+
+	padding-left: 200px;
+	font-size: 1.2em;
+}
+
+a:visited{
+	color: red;
+}
+
+a:hover{
+	color: brown;
+}
+
+a:active{
+	color: brown;
+}
+
+strong{
+	background-color:lightpink;
+
+	border:dotted;
+	border-color:maroon;
+}
+
+/*u{
+	border:dashed;
+}*/
+
+em{
+	background-color:linen;
+}
+
+img{
+	text-align: center;
+	padding-left: 30px;
+}
+
+p{
+	padding-top: 15px;
+	padding-bottom: 15px;
 }
