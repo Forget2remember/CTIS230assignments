@@ -139,6 +139,7 @@ p.intro{
 	padding: 15px;
 	padding-left: 25px;
 	padding-right: 25px;
+	margin: 25px;
 }
 
 p.contentDivider{
@@ -147,6 +148,7 @@ p.contentDivider{
 	padding: 5px;
 	text-align: center;
 	font-weight: bold;
+	margin: 50px;
 }
 
 p.middle{
@@ -181,4 +183,11 @@ p#startOfStory{
 p#endOfStory{
 	border-bottom: dashed;
 	padding: 0px;
+}
+
+div#funWithParrotsContent{
+	margin: 15px;
+	word-spacing: 5px;
+	line-height: 30px;
+	text-align: center;
 }
