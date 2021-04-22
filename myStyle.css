@@ -27,9 +27,6 @@ body{
 Selector --> "h1"
 */
 h1{
-	/* Declaration block */
-	color:maroon; /* Property --> "color" */
-	/* Value --> "maroon" */
 
 	background-color: pink;
 
@@ -41,8 +38,6 @@ h1{
 	border-left-width: 50px;
 	padding: 20px;
 
-	text-align: center;
-
 	font-style: bolder;
 	font-size: 2.0em;
 	font-family: sans-serif;
@@ -52,9 +47,6 @@ h1{
 Selector --> "h2"
 */
 h2{
-	/* Declaration block */
-	color:maroon; /* Property --> "color"
-	Value --> "maroon" */
 
 	background-color: lightpink;
 	/*width:fit-content;*/
@@ -66,12 +58,15 @@ h2{
 	border-right-width: 5px;
 	padding: 10px;
 
-	text-align: center;
-
 	font-weight: bolder;
 	font-style: italic;
 	font-size: 1.5em;
 	font-family: sans-serif;
+}
+
+h1, h2{
+	color: maroon;
+	text-align: center;
 }
 
 /*
@@ -111,6 +106,7 @@ strong{
 
 em{
 	background-color:linen;
+	font-size: 30px;
 }
 
 img{
@@ -121,4 +117,68 @@ img{
 p{
 	padding-top: 15px;
 	padding-bottom: 15px;
+}
+
+p strong{
+	background-color: mistyrose;
+	border: none;
+}
+p em{
+	font-size: 24px;
+}
+
+p.titleAndContentDivider{
+	border: solid;
+	border-top-width: 10px;
+	padding: 0px;
+}
+
+p.intro{
+	border-bottom: solid;
+	border-width: 2px;
+	padding: 15px;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+p.contentDivider{
+	border: dotted;
+	border-width: 1px;
+	padding: 5px;
+	text-align: center;
+	font-weight: bold;
+}
+
+p.middle{
+	border: solid;
+	border-width: 3px;
+	padding: 15px;
+	padding-left: 27px;
+	padding-right: 27px;
+}
+
+p.end{
+	border: solid;
+	border-width: 4px;
+	padding: 15px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+p.hyperlinks{
+	border: dotted;
+	border-right: solid;
+	border-left: solid;
+	color: orange;
+	border-top-color: red;
+}
+
+p#startOfStory{
+	border-top: dotted;
+	padding: 0px;
+}
+
+p#endOfStory{
+	border-bottom: dashed;
+	padding: 0px;
 }
