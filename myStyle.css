@@ -8,14 +8,9 @@ body{
 				    */
 
 	background-color:mistyrose;
-
 	border:solid;
 	border-color:red;
 	border-width: 1px;
-
-/*	font-size: large;
-	font-size: medium;
-	font-size: small;*/
 	font-size: 1.25em;
 	font-family: system-ui, serif, sans-serif;
 }
@@ -38,6 +33,7 @@ h1{
 	font-style: bolder;
 	font-size: 2.0em;
 	font-family: sans-serif;
+
 }
 
 /*
@@ -59,11 +55,14 @@ h2{
 	font-style: italic;
 	font-size: 1.5em;
 	font-family: sans-serif;
+
 }
 
 h1, h2{
+
 	color: maroon;
 	text-align: center;
+
 }
 
 /*
@@ -76,62 +75,73 @@ a:link{
 
 	/*padding-left: 200px;*/
 	font-size: 1.2em;
+
 }
 
 a:visited{
+
 	color: red;
+
 }
 
 a:hover{
+
 	color: brown;
+
 }
 
 a:active{
+
 	color: brown;
+
 }
 
 strong{
+
 	background-color:lightpink;
 
 	border:dotted;
 	border-color:maroon;
-}
 
-/*u{
-	border:dashed;
-}*/
+}
 
 em{
+
 	background-color:linen;
 	font-size: 30px;
-}
 
-img{
-	text-align: center;
-	padding-left: 30px;
 }
 
 p{
+
 	padding-top: 15px;
 	padding-bottom: 15px;
+
 }
 
 p strong{
+
 	background-color: mistyrose;
 	border: none;
+
 }
 
 p em{
+
 	font-size: 24px;
+
 }
 
 p.titleAndContentDivider{
+
 	border: solid;
 	border-top-width: 10px;
 	padding: 0px;
+
 }
 
 p.intro{
+
 	border-bottom: solid;
 	border-width: 2px;
 	padding: 15px;
@@ -140,91 +150,307 @@ p.intro{
 	margin: 25px;
 	word-spacing: 5px;
 	text-align: center;
+
 }
 
 p.contentDivider{
+
 	border: dotted;
 	border-width: 1px;
 	padding: 5px;
 	text-align: center;
 	font-weight: bold;
 	margin: 50px;
+
 }
 
 p.middle{
+
 	border: solid;
 	border-width: 3px;
 	padding: 15px;
 	padding-left: 27px;
 	padding-right: 27px;
 	text-align: center;
+
 }
 
 p.end{
+
 	border: solid;
 	border-width: 4px;
 	padding: 15px;
 	padding-left: 30px;
 	padding-right: 30px;
 	text-align: center;
+
 }
 
-p.hyperlinks{
+p.colorful{
+
 	border: dotted;
 	border-right: solid;
 	border-left: solid;
 	color: orange;
 	border-top-color: red;
+
 }
 
 div.centerContent{
+
 	text-align: center;
+	align-content: center;
+	resize: both;
+	overflow: auto;
+
 }
 
 /* flexbox implementations */
 header.titleHeader{
+
 	display: flex;
 	flex-wrap: wrap;
+
 }
 
-div.titleContentDiv{
-	/*overflow: hidden;*/
-	/*float: right;*/
+div.titleContent{
+
 	align-content: flex-start;
+
 }
 
-div.divFlexBreak{
+div.flexboxBreak{
+
 	flex-basis: 100%;
 	height: 0px;
+
 }
 
 div.navBarDiv{
+
 	display: flex;
 	flex-wrap: wrap;
-	flex-direction: row-reverse;
+	flex-direction: column;
+
+}
+
+/* Optional Section 
+	Floating other content -> a block of text.
+*/
+div.contentDiv{
+
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+
+}
+
+div.imgDiv{
+
+	resize: both;
+	overflow: auto;
+
+}
+
+div.navigationDropdown{
+
+	display: inline-block;
+	position: relative;
+	height: 100%;
+	width: 45%;
+	resize: both;
+	overflow: auto;
+	margin: 0 auto;
+
+}
+
+div.dropdownContent{
+
+	display: none;
+	position: relative;
+	height: auto;
+	width: auto;
+	resize: both;
+	overflow: auto;
+	margin: 0 auto;
+	min-width: 160px;
+	z-index: 1;
+
+}
+
+div.dropdownContent a{
+
+	display: block;
+	color: maroon;
+	background-color: burlywood;
+	/*padding: 12px 16px;*/
+}
+
+div.dropdownContent a:hover {
+
+	background-color: red;
+
+}
+
+div.dropdownButton{
+
+	position: relative;
+	height: auto;
+	width: auto;
+	resize: both;
+	overflow: auto;
+	margin: 0 auto;
+
+}
+
+button.dropdown{
+
+	position: relative;
+	height: 100%;
+	width: 100%;
+	color: maroon;
+	font-size: 25px;
+	font-weight: bold;
+	font-family: "Times New Roman";
+	font-size-adjust: auto;
+	border-width: 5px;
+	border-color: maroon;
+	background-color: pink;
+
+}
+
+div.navigationDropdown:hover div.dropdownContent {
+
+	display: block;
+
+}
+
+button.dropdown:hover {
+
+	background-color: red;
+
+}
+
+header.navigation{
+
+	position: relative;
+	height: 100%;
+	width: 100%;
+	resize: both;
+	overflow: auto;
+	margin: 0 auto;
+	text-align: center;
+
 }
 
 p#startOfStory{
+
 	border-top: dotted;
 	padding: 0px;
+
 }
 
 p#endOfStory{
+
 	border-bottom: dashed;
 	padding: 0px;
+
 }
 
 div#funWithParrotsContent{
+
 	margin: 15px;
 	word-spacing: 5px;
 	line-height: 30px;
 	text-align: center;
+
 }
 
 /* Using the "float" property */
 img#parrot1{
+
 	float: right;
 	border: 2px solid blue;
 	padding: 0px;
 	margin: 10px;
+
 }
+
+/* Implementing features (table) from chapter 8 */
+div#tableDiv{
+
+	border: dashed;
+	border-width: 1px;
+	border-color: blue;
+	padding: 15px;
+	margin: 0 auto;
+	width: auto;
+	height: auto;
+	resize: both;
+	overflow: auto;
+
+}
+
+table#parrotTable{
+
+	height: auto;
+	width: auto;
+	border: solid;
+	border-width: auto;
+	column-width: auto;
+	margin: 0 auto;
+
+}
+
+tr{
+
+	position: relative;
+	height: auto;
+	width: auto;
+	padding: 10px;
+	text-align: center;
+
+}
+
+tr th{
+
+	letter-spacing: 4px;
+	padding: 10px;
+	padding-left: 15px;
+	padding-right: 15px;
+	border: solid;
+	border-color: red;
+	font-weight: bolder;
+	font-size: 30px;
+	font-family: "Times New Roman";
+
+}
+
+tr td{
+
+	position: relative;
+	height: 50px;
+	border: solid;
+	border-color: gold;
+
+}
+
+caption {
+
+	position: relative;
+	text-decoration-line: underline;
+	text-decoration-style: dotted;
+	color: blue;
+	font-style: italic;
+	font-size: 40px;
+	font-weight: bolder;
+	font-family: "Calisto MT", "Times New Roman";
+	word-spacing: 5px;
+	letter-spacing: 3px;
+	border: solid;
+	border-color: maroon;
+	border-bottom: none;
+	padding: 20px;
+
+}
+
