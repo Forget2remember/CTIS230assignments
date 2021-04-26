@@ -29,8 +29,6 @@ h1{
 	border-right-width: 50px;
 	border-left-width: 50px;
 	padding: 20px;
-
-	font-style: bolder;
 	font-size: 2.0em;
 	font-family: sans-serif;
 
@@ -312,7 +310,6 @@ button.dropdown{
 	font-size: 25px;
 	font-weight: bold;
 	font-family: "Times New Roman";
-	font-size-adjust: auto;
 	border-width: 5px;
 	border-color: maroon;
 	background-color: pink;
@@ -396,7 +393,6 @@ table#parrotTable{
 	height: auto;
 	width: auto;
 	border: solid;
-	border-width: auto;
 	column-width: auto;
 	margin: 0 auto;
 
