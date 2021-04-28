@@ -166,10 +166,11 @@ p.middle{
 
 	border: solid;
 	border-width: 3px;
-	padding: 15px;
-	padding-left: 27px;
-	padding-right: 27px;
+	padding: 30px;
 	text-align: center;
+	/* Add extra styling for assignment 6 part 4 */
+	border-radius: 15px;
+	box-shadow: 9px 5px 10px black;
 
 }
 
@@ -281,7 +282,7 @@ div.dropdownContent a{
 	display: block;
 	color: maroon;
 	background-color: burlywood;
-	/*padding: 12px 16px;*/
+	font-size: 15px;
 }
 
 div.dropdownContent a:hover {
@@ -450,3 +451,665 @@ caption {
 
 }
 
+/* Content for Assignment 6 */
+
+/* Styling for one of the div objects made during assignment 6 */
+div#foundMeInner {
+
+	display: initial;
+
+	/* This makes the container's location relative to the edges
+	   of its parent container */
+	position: absolute;
+
+	/* Making the obj respond properly for screen resizing */
+	overflow: auto;
+
+	/* Setting the size of the container */
+	height: 80%;
+	width: 80%;
+
+	/* Aligning the content at the center of the container */
+	text-align: center;
+
+	/* Adding color and text effects */
+	color: yellow;
+	font-size: 75px;
+	font-family: "Times New Roman";
+	font-weight: bold;
+
+	/* Adding border effects */
+	border: dotted;
+	border-color: blue;
+	border-width: 2px;
+
+}
+
+/* Second div obj made during assignment 6 */
+div#foundMeOuter {
+
+	/* Not visible by default */
+	display: none;
+
+	position: relative;
+	top: 20px;
+	bottom: 10px;
+
+	/* Making the container respond propery for screen resizing */
+	overflow: auto;
+
+	/* Setting the size of the container */
+	height:  100px;
+	width: auto;
+
+	/* Changing padding to align contents at center. */
+	padding-top: 1%;
+	padding-left: 8%;
+
+	/* Adding border effects */
+	background-color: cyan;
+	border: dotted;
+	border-color: lime;
+	border-width: 5px;
+
+	/* Setting the margin so that the outer container doesn't
+	   touch any other objects */
+	margin: 25px;
+	margin-left: 100px;
+	margin-right: 100px;
+
+}
+
+/* Styling the button containers for assignment 6 part 2 */
+div#secondButtonOuterContainer {
+
+	position: relative;
+
+	height: 100px;
+	width: auto;
+
+	padding: 1px;
+	margin: 10px;
+
+	overflow: auto;
+
+}
+
+div#secondButtonMiddleContainer {
+
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	box-sizing: border-box;
+	height: 100%;
+	width: 75%;
+
+}
+
+div#secondButtonInnerContainer {
+
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	box-sizing: border-box;
+	height: 100%;
+	width: 50%;
+
+}
+
+div.secondButtonContainer {
+
+	border: solid;
+	border-color: navy;
+	border-width: 1px;
+	box-shadow: 4px 3px 8px navy;
+
+}
+
+div#buttonContainer {
+
+	position: relative;
+	height: 100px;
+	width: auto;
+
+	box-shadow: 0px 0px 35px maroon;
+	border-radius: 15px;
+	background-color: black;
+
+	padding: 1px;
+	margin: 10px;
+
+}
+
+button#thebutton {
+
+	color: tan;
+	font-size: 25px;
+	text-shadow: 5px 3px 3px #FF0000, 0 0 5px #0000FF;
+	/*border: solid;*/
+	border-width: 0px;
+	/*border-color: orangered;*/
+	background: rgba(0, 0, 0, 0.45);
+	box-shadow: 3px 3px 30px maroon;
+	letter-spacing: 3px;
+
+}
+
+button#theSecondButton {
+
+	color: navy;
+	text-shadow: 4px 3px 5px #000080;
+	border-color: navy;
+	background-color: cyan;
+	box-shadow: 9px 5px 10px navy;
+
+}
+
+button.button {
+
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	height: auto;
+	width: auto;
+
+	border-radius: 10px;
+	padding: 10px;
+
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+	word-spacing: 2px;
+	letter-spacing: 1px;
+
+}
+
+/* Part 2: Additional styling for elements I added for fun */
+span {
+
+	/* Set background color to match rest of page */
+	background-color: mistyrose;
+
+}
+
+span.firstWordOfTextBody {
+
+	font-size: 24px;
+	font-style: italic;
+
+}
+
+span.boldText {
+
+	font-weight: bolder;
+
+}
+
+span.textBody {
+
+	word-spacing: 4px;
+
+}
+
+/**/
+/* Assignment 6: Part 3 */
+/**/
+input#myinput {
+
+	/* Make the item positionable in respect to its parent container */
+	position: absolute;
+
+	/* Will use the padding and border in the element's width and height */
+	box-sizing: border-box;
+
+	/* Make the object the same height and width as its <div> container */
+	/* When the container is resized, the <input> object will resize the same */
+	height: 100%;
+	width: 100%;
+
+	/* If the object can't fit on the page, it will condense neatly into a scroll box */
+	overflow: auto;
+
+	/* Adjust how the content is placed within its borders */
+	padding: 15px;
+
+	font-size: 25px;
+	font-size-adjust: all;
+
+	color: darksalmon;
+	background-color: darkred;
+
+}
+
+div#textInputContainer {
+
+	position: relative;
+	height: 50px;
+	width: auto;
+
+	border: solid;
+	box-shadow: 10px 5px 5px red;
+
+	margin: 3%;
+	margin-top: 1%;
+
+}
+
+/* The container to display the text entered by the user */
+div#textOutputContainer {
+
+	position: relative;
+	height: 50px;
+	width: auto;
+
+	border: solid;
+	border-width: 2px;
+	border-color: olivedrab;
+	box-shadow: 10px 5px 5px green;
+
+	margin: 3%;
+
+}
+
+/* The element that displays what the user enters in the text box */
+p#textOutput {
+
+	display: block;
+
+	position: absolute;
+	top: -50%;
+	height: 100%;
+	width: 100%;
+
+	border: solid;
+	border-width: 1px;
+	border-color: white;
+	box-sizing: border-box;
+
+	padding-left: 15px;
+	padding-top: 9px;
+
+	font-size: 25px;
+	font-family: "Brush Script MT";
+
+	color: lime;
+	background-color: olivedrab;
+
+	resize: none;
+	overflow: auto;
+
+}
+
+span#inputPromptEn {
+
+	font-family: "Helvetica";
+	font-size: 20px;
+
+	text-align: center;
+	text-shadow: 2px 2px 8px #800000;
+	text-decoration: underline;
+
+	background: rgba(0, 0, 0, 0.0);
+
+	padding-top: 15px;
+	padding-bottom: 15px;
+
+}
+
+span#inputPromptDe {
+
+	font-family: "Browallia New";
+	font-size: 30px;
+
+	text-align: center;
+	text-decoration: overline;
+	text-decoration-style: dashed;
+	text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+
+	background: rgba(255, 50, 0, 0.3);
+
+	border: dotted;
+	border-width: 0px;
+	border-bottom-width: 8px;
+
+}
+
+div#inputPromptsContainer {
+
+	height: auto;
+	width: auto;
+
+	overflow: auto;
+
+	background: rgba(255, 100, 0, 0.3);
+	box-shadow: 10px 5px 5px orange;
+
+	padding: 5px;
+	margin: 3%;
+
+}
+
+span.inputPrompt {
+
+	/* Styles the 2 <span> elements that hold the text input prompt content */
+	display: block;
+	position: relative;
+	height: auto;
+	width: auto;
+	box-sizing: border-box;
+
+}
+
+span#letterB {
+
+	position: relative;
+	top: 3px;
+
+	font-size: 55px;
+
+	background: rgba(0, 0, 0, 0.0);
+
+}
+
+span#papageien {
+
+	font-weight: bold;
+	font-size: 40px;
+	letter-spacing: 2px;
+
+	text-decoration: underline;
+	text-decoration-color: lime;
+
+	background: rgba(0, 0, 0, 0.0);
+
+}
+
+span#letterP {
+
+	position: relative;
+	bottom: 2px;
+	left: 2px;
+
+	color: red;
+	font-size: 60px;
+	letter-spacing: 0px;
+
+	/* Make the background of the "P" transparent, so it doesn't block the next letter */
+	background: rgba(0, 0, 0, 0.0);
+
+}
+
+span#letterA {
+
+	position: relative;
+	bottom: 3px;
+
+	color: blue;
+	background: rgba(0, 0, 0, 0.0);
+
+}
+
+span#secondLetterP {
+
+	position: relative;
+	top: 3px;
+
+	color: yellow;
+	font-size: 55px;
+	background: rgba(0, 0, 0, 0.0);
+
+}
+
+span#secondLetterA {
+
+	position: relative;
+	bottom: 3px;
+
+	color: green;
+	background: rgba(0, 0, 0, 0.0);
+
+}
+
+span#letterG {
+
+	position: relative;
+	top: 3px;
+
+	color: red;
+	font-size: 55px;
+	letter-spacing: 4px;
+	background: rgba(0, 0, 0, 0.0);
+
+}
+
+span#letterE {
+
+	position: relative;
+	bottom: 3px;
+
+	color: blue;
+	background: rgba(0, 0, 0, 0.0);
+
+}
+
+span#letterI {
+
+	color: orange;
+	font-size: 45px;
+	background: rgba(0, 0, 0, 0.0);
+
+}
+
+span#secondLetterE {
+
+	position: relative;
+	bottom: 3px;
+
+	color: green;
+	background: rgba(0, 0, 0, 0.0);
+
+}
+
+span#letterN {
+
+	position: relative;
+	top: 2px;
+
+	color: purple;
+	font-size: 50px;
+	background: rgba(0, 0, 0, 0.0);
+
+}
+
+span.sie {
+
+	position: relative;
+	bottom: 5px;
+
+	font-size: 35px;
+
+	/*text-decoration: underline;*/
+	text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+	background: rgba(0, 0, 0, 0.0);
+
+}
+
+/* Assignment 6: Part 4 */
+/* Adding an additional interactive element */
+form#contentSelectForm {
+
+	display: flex;
+	flex-direction: column;
+	align-content: flex-start;
+
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -65%);
+	height: auto;
+	width: auto;
+
+/*	border: solid;
+	border-color: red;
+	border-width: 1px;*/
+	border-radius: 30px;
+	padding: 25px;
+
+	/*margin: 10px;*/
+
+	background:	rgba(0, 0, 0, 0.0);
+	box-shadow: 0px 7px 15px black;
+
+	text-align: center;
+	overflow: auto;
+
+}
+
+fieldset#contentSelectFields {
+
+	display: flex;
+	flex-direction: row;
+	align-content: flex-start;
+
+	width: auto;
+	height: auto;
+
+	border: solid;
+	border-color: rgba(0, 0, 0, 0.1);
+	border-width: 2px;
+	border-radius: 50px;
+
+	padding: 15px;
+
+	background: rgba(0, 0, 0, 0.2);
+	box-shadow: 0px -12px 25px black;
+
+}
+
+input.checkbox {
+
+	width: 1.1em;
+	height: 1.1em;
+	opacity: 0.8;
+	border-radius: 5px;
+/*	margin-left: 15px;
+	margin-right: 15px;*/
+	box-shadow: 2px 2px 5px black;
+
+}
+
+div#contentSelectFormContainer {
+
+	position: relative;
+	height: 250px;
+	width: auto;
+
+	margin: 20px;
+	margin-left: 50px;
+	margin-right: 50px;
+
+	background: rgba(128, 0, 0, 1.0);
+	border-bottom-right-radius: 50%;
+	border-bottom-left-radius: 50%;
+	border-top-right-radius: 15px;
+	border-top-left-radius: 15px;
+	box-shadow: 0px -20px 20px black, 0px 20px 20px black;
+
+	overflow: auto;
+}
+
+label#contentSelectLabel {
+
+	margin-bottom: 15px;
+	color: maroon;
+	text-shadow: 1px 1px 1px white, 15px 0px 5px black;
+	font-size: 30px;
+	font-family: "Times New Roman";
+	font-weight: bold;
+	text-decoration: underline;
+	word-spacing: 1px;
+
+}
+
+label.checkboxLabel {
+
+	color: black;
+	text-align: left;
+	margin-left: 5px;
+	margin-right: 15px;
+	font-size: 20px;
+	text-shadow: 1px 1px 10px white;
+	font-weight: bolder;
+
+}
+
+/* For file "DasDeutscheScreiben.html" */
+/* I modified the <p> elements with class "contentDivider" to be <label> elements that serve the purpose */
+label.sectionLabel {
+
+	width: auto;
+	height: auto;
+	border: dotted;
+	border-width: 1px;
+	border-radius: 25px;
+	padding: 5px;
+	text-align: center;
+	font-weight: bold;
+	font-family: "Arial";
+	font-size: 2em;
+	margin: 50px;
+	box-shadow: 0px 0px 8px maroon;
+	letter-spacing: 3px;
+
+}
+
+label#wendell {
+
+	font-style: italic;
+	font-size: 45px;
+	font-family: "Times New Roman";
+
+}
+
+label#firstWord {
+	background: rgba(0, 0, 0, 0.0);
+	font-size: 30px;
+}
+
+label.italic {
+	font-style: italic;
+}
+
+label.strong {
+	font-weight: bold;
+}
+
+section {
+	color: black;
+	background: rgba(0, 0, 0, 0.5);
+	display: flex;
+	flex-direction: column;
+	align-content: flex-start;
+	margin: 25px;
+	margin-top: 80px;
+	font-family: "monospace";
+	font-size: 25px;
+	padding: 25px;
+	border-radius: 25px;
+	box-shadow: 10px 6px 8px black;
+}
+
+span {
+	background: rgba(0, 0, 0, 0.0);
+}
+
+/* Assignment 6 part 4 Debugging purposes */
+section#introduction {
+	/*display: none;*/
+}

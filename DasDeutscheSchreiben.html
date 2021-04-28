@@ -7,150 +7,259 @@
 		<meta charset="utf-8">
 		<title>Eine Fähigkeit von Netzwerke</title>
 		<link rel="stylesheet" href="myStyle.css">
+		<script src="testscript.js" defer></script>
 
 	</head>
 
 	<body>
 
-		<header class="navigation">
+		<div id="contentSelectFormContainer">
 
-			<div class="navigationDropdown">
+			<form id="contentSelectForm">
 
-				<div class="dropdownButton">
+				<label id="contentSelectLabel">Select the content, that you wish to see:</label>
+				<fieldset id="contentSelectFields">
 
-					<button class="dropdown">
-						Links to More German Parrots
-					</button>	
+					<input type="checkbox" id="headerBox" name="selectHeader" value="selectHeader" class="checkbox" autocomplete="off" checked><label class="checkboxLabel">Header</label><br>
+					<input type="checkbox" id="introBox" name="selectIntro" value="Introduction" class="checkbox" autocomplete="off" checked><label class="checkboxLabel">Introduction</label><br>
+					<input type="checkbox" id="middleBox" name="selectMiddle" value="Middle" class="checkbox" autocomplete="off" checked><label class="checkboxLabel">Middle</label><br>
+					<input type="checkbox" id="endingBox" name="selectEnding" value="Ending" class="checkbox" autocomplete="off" checked><label class="checkboxLabel">Ending</label><br>
+					<input type="checkbox" id="footerBox" name="selectFooter" value="Footer" class="checkbox" autocomplete="off" checked><label class="checkboxLabel">Footer</label><br>
+
+				</fieldset>
+			</form>
+		</div>
+
+		<section lang="en" id="headerSection" class="section">
+
+			<header class="navigation">
+
+				<div class="navigationDropdown">
+
+					<div class="dropdownButton">
+
+						<button class="dropdown">
+							Links to More German Parrots
+						</button>	
+
+					</div>
+
+					<div class="dropdownContent">
+
+						<a href="https://forget2remember.github.io/CTIS230assignments/HedgecockAssignment2.html">A link to HedgecockAssignment2.html</a>
+
+						<a href="https://forget2remember.github.io/CTIS230assignments/FunWithParrots.html">A link to FunWithParrots.html</a>
+
+					</div>
 
 				</div>
 
-				<div class="dropdownContent">
+			</header>
+
+			<header class="title">
+
+				<div class="titleContent">
+					<h1>
+						<strong>
+							<u>CCNA: Cisco Certified Networking Associate</u>
+						</strong>
+					</h1>
+				</div>
+
+				<div class="flexboxBreak"></div>
+
+				<div class="titleContent">
+					<h2>
+						<u>Ein Buch, das viel Kenntnis beinhaltet</u>
+					</h2>
+				</div>
+
+				<div class="titleContent">
+					<h2>
+						<u>Nur über Netzwerke</u>
+					</h2>
+				</div>
+
+				<br>
+				<!-- 
+				<p class="titleAndContentDivider"></p>
+				<p class="titleAndContentDivider"></p>
+				<p class="titleAndContentDivider"></p> 
+			-->
+				<br>
+
+			</header>
+
+		</section>
+
+		<!-- <p id="startOfStory"></p> -->
+
+		<section lang="de" id="introSection" class="section">
+
+			<label class="sectionLabel">Introduction</label>
+			<label id="wendell">Wendell,</label>
+
+			<!-- Adding id "firsttest" for assignment 6 -->
+			<p id="firsttest" class="intro">
+
+				<label id="firstWord" class="italic">kürzlich</label> habe ich eines <label class="strong">Ihrer Bücher</label> gelesen! Eigentlich habe ich nicht nur einer von ihnen gelesen, sondern zwei! Aber das Buch, das ich gerade gelesen habe, heißt Cisco Certified Networking Associate. Beziehungsweise habe ich es vor zwei Monaten gelesen. Und vor einem Jahr habe ich auch noch einer Ihren Bücher gelesen und studiert, das Cisco Certified Entry Networking Technician heißt. 
+
+			</p>
+
+			<!-- Additional content added for assignment 6 -->
+			<div lang="en" id="foundMeOuter">
+				<div id="foundMeInner">
+					You found me!
+				</div>
+			</div>
+			<!-- End of additional content -->
+
+			<!-- Assignment 6: Part 2: Creating a button -->
+			<div lang="en" id="buttonContainer">
+				<button id="thebutton" class="button">
+					A Button
+				</button>
+			</div>
+
+			<!-- Adding id "buttontest" for assignment 6 -->
+			<p id="buttontest" class="intro">
+
+				<!-- Replaced <em> & <strong> tags with <label> tags -->
+				<label class="italic">Es gibt</label> <label class="strong">kein Geheimnis</label>. Offensichtlich liebe ich Ihre Bücher und will intelligenter werden.  Ich denke, wenn ich Ihre Bücher mehr studiere und mich davon erinerre, dann kann ich mit Computern und Netzwerken besser und gerissener arbeiten. Na, diese Einleitung hat lang genug gedauert. Jetzt müssen wir weiter fortfahren und ich werde meine Meinung beginnen.
+
+			</p>
+
+		</section>
+
+		<section lang="de" id="middleSection" class="section">
+
+			<label lang="en" class="sectionLabel">Middle</label>
+
+			<!-- Creating a second button for assignment 6 -->
+			<div lang="en" id="secondButtonOuterContainer" class="secondButtonContainer">
+				<div id="secondButtonMiddleContainer" class="secondButtonContainer">
+					<div id="secondButtonInnerContainer" class="secondButtonContainer">
+						<button id="theSecondButton" class="button">
+							A Second Button
+						</button>
+					</div>
+				</div>
+			</div>
+
+			<!-- Adding a second container of content for the second button for assignment 6 -->
+			<p id="secondButtonTest" class="middle">
+
+				<!-- Assignment 6: Part 2: Added span tag as part of my additional code I'm just doing for fun -->
+				<span id="secondButtonTestSpan" class="textBody">
+
+					<!-- Assignment 6: Part 2: Modified below text by replacing <em> and <strong> tags with <span> tags -->
+					<span id="secondButtonTestContent0" class="firstWordOfTextBody">Na</span>, ich habe über <span id="secondButtonTestContent1" class="boldText">Ihr Buch</span> viel zu sagen. Zuerst muss ich meinen, dass Sie technische Bücher sehr schön schreiben können. Sie müssen für technisches Schreiben eine natürliche Fähigkeit besitzen. Auch glaube ich, dass Sie in Ihrem Gehirn mehr Kenntnis von der Vernetzung als alle anderen besitzen. Ich mag die Methode, die Sie mit dem Buch nehmen. Eigentlich haben Sie in zwei Büchern den Inhalt geteilt, mit dem die Themen in anderen Teilen sortiert sind. Diese Methode macht viel einfacher das Studieren, weil man aufmerksamer sein kann und die neuen Techniken besser lernen kann. Ich finde, wenn die Themen in ihren relativen Gruppen vereinigt sind, macht es weniger schmerzhaft das Lernen.
+
+				</span>
+
+			</p>
+		
+
+			<p class="middle">
+
+				<!-- Assignment 6: Part 4: Modified the below <strong><em> elements to a single <label>  -->
+				<label class="strong">Ihr erstes Buch</label> beinhaltet acht Teile, von den jeder Teil ähnliche Techniken erklärt. Der erste Teil ist relativ einfach, der Informationen über die Grundlagen der Vernetzung beinhaltet. Es gibt drei Kapitel, die die Trittsteine von der Vernetzung bauen. Am meisten besprechen sie TCP/IP, LANs, WANs, und IP-Routing. Als ich zuerst den Begriff TCP/IP gehört habe, war ich total verwirrt. Kein Bild konnte ich in meinem Kopf malen. Es hat mir keinen Sinn gemacht, jedoch war der Begriff die ganze Zeit einfach zu verstehen! Nur hatte ich mir davon noch nicht mit dem richtigen Denken gedacht. Nachdem ich dieses Buch gelesen habe, habe ich es zu verstehen begonnen, was dieser Begriff bedeutet. Deswegen verstehe ich das, wie das Internet funktionieren soll, ebenso gut wie die Sachen, die das Internet beinhaltet. 
+
+			</p>
+
+		</section>
+
+		<section lang="de" id="endingSection" class="section">
+
+			<label class="sectionLabel">Ending</label>
+
+			<p class="end">
+
+				<!-- Assignment 6: Part 4 -->
+				<!-- Replaced <em> and <strong> tags w/ <label> tags -->
+				<label class="italic">Auch</label>> fühle ich mich, dass es <label class="strong">erforderlich</label> zu meinen ist, dass es über etwas einfacher zu lernen ist, wenn man für jenes Ding sehr viel Lust hat. Weil die Vernetzung meiner Seele vollständige Fröhlichkeit gibt, kann ich mehr Energie haben, wenn ich lese und lerne. Manche Menschen schmerzen, wenn sie für eine Prüfung bei ihrer Arbeit technischen Inhalt studieren müssen. . .
+
+			</p>
+
+			<p class="end">	
+
+				<!-- Assignment 6: Part 4 -->
+				<!-- Replaced <em> & <strong> tags w/ <label> tags -->
+				. . .<label class="italic">Doch</label> ich verschwende <label class="strong">keine Gelegenheiten</label>, die vielleicht auf mich warten!
+
+			</p>
+
+			<br>
+<!-- 			<p id="endOfStory"></p> -->
+			<br>
+
+		</section>
+
+		<!-- Assignment 6: Part 3: Adding an <input> tag -->
+		<!-- I encapsulated the <input> element inside a <div> container for easy manipulation/styling -->
+		<div id="inputPromptsContainer">
+
+			<span lang="de" id="inputPromptDe" class="inputPrompt"> <span id="letterB">B</span>itte, erzählen <span class="sie">Sie</span> uns, was <span class="sie">Sie</span> über diese 
+				<span id="papageien">
+					<span id="letterP">P</span><span id="letterA">a</span><span id="secondLetterP">p</span><span id="secondLetterA">a</span><span id="letterG">g</span><span id="letterE">e</span><span id="letterI">i</span><span id="secondLetterE">e</span><span id="letterN">n</span>
+				</span> denken
+			</span>
+
+			<span lang="en" id="inputPromptEn" class="inputPrompt">(Please tell us what you think about these parrots)</span>
+
+		</div>
+
+		<div lang="en" id="textInputContainer">
+
+			<input type="text" id="myinput" placeholder="A place to spill your thoughts" maxlength="60" autocomplete="off">
+
+		</div>
+
+		<!-- Assignment 6: Part 3: Adding the output markup -->
+		<div lang="en" id="textOutputContainer">
+
+			<p id="textOutput">A place to see your thoughts</p>
+
+		</div>
+		<!-- End of Assignment 6: Part 3 markup -->
+
+		<section lang="en" id="footerSection" class="section">
+
+			<footer>
+
+				<div class="centerContent">
+
+					<div class="imgDiv">
+						<img src="images/parrotImage.jpg" width=800 alt="Image of two parrots - courtesy of ParrotOS" title="ParrotOS">
+					</div>
+
+					https://wallpapercave.com/wp/wp4896092.jpg <br>
+
+					<br>
+					<br>
+
+					<div>
+
+						Website Creator: Garrett H. <br>
+						Institution: Guilford College <br>
+						Contact Email: cgarretth@yahoo.com <br>
+						Date Last Modified: 4/23/21 <br>
+
+					</div>
+
+					<br>
 
 					<a href="https://forget2remember.github.io/CTIS230assignments/HedgecockAssignment2.html">A link to HedgecockAssignment2.html</a>
+
+					<br>
 
 					<a href="https://forget2remember.github.io/CTIS230assignments/FunWithParrots.html">A link to FunWithParrots.html</a>
 
 				</div>
 
-			</div>
+			</footer>
 
-		</header>
-
-		<header class="title">
-
-			<div class="titleContent">
-				<h1>
-					<strong>
-						<u>CCNA: Cisco Certified Networking Associate</u>
-					</strong>
-				</h1>
-			</div>
-
-			<div class="flexboxBreak"></div>
-
-			<div class="titleContent">
-				<h2>
-					<u>Ein Buch, das viel Kenntnis beinhaltet</u>
-				</h2>
-			</div>
-
-			<div class="titleContent">
-				<h2>
-					<u>Nur über Netzwerke</u>
-				</h2>
-			</div>
-
-			<br>
-			<!-- 
-			<p class="titleAndContentDivider"></p>
-			<p class="titleAndContentDivider"></p>
-			<p class="titleAndContentDivider"></p> 
-		-->
-			<br>
-
-		</header>
-
-		<p id="startOfStory"></p>
-		<br>
-		<p class="contentDivider">Introduction</p>
-
-		<em>Wendell</em>,
-		
-		<p class="intro">
-
-			<em>kürzlich</em> habe ich eines <strong>Ihrer Bücher</strong> gelesen! Eigentlich habe ich nicht nur einer von ihnen gelesen, sondern zwei! Aber das Buch, das ich gerade gelesen habe, heißt Cisco Certified Networking Associate. Beziehungsweise habe ich es vor zwei Monaten gelesen. Und vor einem Jahr habe ich auch noch einer Ihren Bücher gelesen und studiert, das Cisco Certified Entry Networking Technician heißt. 
-
-		</p>
-
-		<p class="intro">
-
-			<em>Es gibt</em> <strong>kein Geheimnis</strong>. Offensichtlich liebe ich Ihre Bücher und will intelligenter werden.  Ich denke, wenn ich Ihre Bücher mehr studiere und mich davon erinerre, dann kann ich mit Computern und Netzwerken besser und gerissener arbeiten. Na, diese Einleitung hat lang genug gedauert. Jetzt müssen wir weiter fortfahren und ich werde meine Meinung beginnen.
-
-		</p>
-
-		<p class="contentDivider">Middle</p>
-
-		<p class="middle">
-
-			<em>Na</em>, ich habe über <strong>Ihr Buch</strong> viel zu sagen. Zuerst muss ich meinen, dass Sie technische Bücher sehr schön schreiben können. Sie müssen für technisches Schreiben eine natürliche Fähigkeit besitzen. Auch glaube ich, dass Sie in Ihrem Gehirn mehr Kenntnis von der Vernetzung als alle anderen besitzen. Ich mag die Methode, die Sie mit dem Buch nehmen. Eigentlich haben Sie in zwei Büchern den Inhalt geteilt, mit dem die Themen in anderen Teilen sortiert sind. Diese Methode macht viel einfacher das Studieren, weil man aufmerksamer sein kann und die neuen Techniken besser lernen kann. Ich finde, wenn die Themen in ihren relativen Gruppen vereinigt sind, macht es weniger schmerzhaft das Lernen.
-
-		</p>
-
-		<p class="middle">
-
-			<strong><em>Ihr erstes Buch</em></strong> beinhaltet acht Teile, von den jeder Teil ähnliche Techniken erklärt. Der erste Teil ist relativ einfach, der Informationen über die Grundlagen der Vernetzung beinhaltet. Es gibt drei Kapitel, die die Trittsteine von der Vernetzung bauen. Am meisten besprechen sie TCP/IP, LANs, WANs, und IP-Routing. Als ich zuerst den Begriff TCP/IP gehört habe, war ich total verwirrt. Kein Bild konnte ich in meinem Kopf malen. Es hat mir keinen Sinn gemacht, jedoch war der Begriff die ganze Zeit einfach zu verstehen! Nur hatte ich mir davon noch nicht mit dem richtigen Denken gedacht. Nachdem ich dieses Buch gelesen habe, habe ich es zu verstehen begonnen, was dieser Begriff bedeutet. Deswegen verstehe ich das, wie das Internet funktionieren soll, ebenso gut wie die Sachen, die das Internet beinhaltet. 
-
-		</p>
-
-		<p class="contentDivider">Ending</p>
-
-		<p class="end">
-
-			<em>Auch</em> fühle ich mich, dass es <strong>erforderlich</strong> zu meinen ist, dass es über etwas einfacher zu lernen ist, wenn man für jenes Ding sehr viel Lust hat. Weil die Vernetzung meiner Seele vollständige Fröhlichkeit gibt, kann ich mehr Energie haben, wenn ich lese und lerne. Manche Menschen schmerzen, wenn sie für eine Prüfung bei ihrer Arbeit technischen Inhalt studieren müssen. . .
-
-		</p>
-
-		<p class="end">	
-			. . .<em>Doch</em> ich verschwende <strong>keine Gelegenheiten</strong>, die vielleicht auf mich warten!
-		</p>
-
-		<br>
-		<p id="endOfStory"></p>
-		<br>
-
-		<footer>
-
-			<div class="centerContent">
-
-				<div class="imgDiv">
-					<img src="images/parrotImage.jpg" width=800 alt="Image of two parrots - courtesy of ParrotOS" title="ParrotOS">
-				</div>
-
-				https://wallpapercave.com/wp/wp4896092.jpg <br>
-
-				<br>
-				<br>
-
-				<div>
-
-					Website Creator: Garrett H. <br>
-					Institution: Guilford College <br>
-					Contact Email: cgarretth@yahoo.com <br>
-					Date Last Modified: 4/23/21 <br>
-
-				</div>
-
-				<br>
-
-				<a href="https://forget2remember.github.io/CTIS230assignments/HedgecockAssignment2.html">A link to HedgecockAssignment2.html</a>
-
-				<br>
-
-				<a href="https://forget2remember.github.io/CTIS230assignments/FunWithParrots.html">A link to FunWithParrots.html</a>
-
-			</div>
-
-		</footer>
+		</section>
 
 	</body>
 
